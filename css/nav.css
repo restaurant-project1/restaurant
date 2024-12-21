@@ -1,0 +1,151 @@
+/*fonts*/
+/*Fonts for pages content*/
+@font-face {
+    font-family: 'Roboto_Slab';
+    src: url('../fonts/RobotoSlab_font/RobotoSlab-VariableFont.ttf');
+    font-style: normal;
+}
+
+/*Font fredericka*/
+@font-face {
+    font-family: 'fredericka';
+    src: url('../fonts/FrederickatheGreat_font/FrederickatheGreat-Regular.ttf');
+    font-style: normal;
+}
+
+/*Font Bestary*/
+@font-face {
+    font-family: 'Bestary';
+    src: url('../fonts/Bestary_font/Bestary.ttf');
+    font-style: normal;
+}
+
+.prime_head {
+    font-family: Bestary;
+}
+
+body , nav button , button a {
+    font-family: Roboto_Slab;
+}
+
+.text-content {
+    font-family: fredericka;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+.nav {
+    position: fixed; /* يجعل شريط التنقل ثابتًا */
+    top: 0; /* يضعه في أعلى الصفحة */
+    width: 100%; /* يغطي العرض بالكامل */
+    z-index: 1000; /* يضمن بقاءه فوق العناصر الأخرى */
+    background-color: rgba(0, 0,  0.6); /* خلفية نصف شفافة أو غير شفافة */
+    padding: 10px 20px ; /* يضيف مسافات داخل الشريط */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 14px;
+    border: none;
+}
+
+.navbar img {
+border-radius: 50%; /* يجعل الصورة دائرية */
+width: 30px; /* يمكنك تعديل الحجم حسب الحاجة */
+height: 30px; /* نفس الأمر هنا لتحديد ارتفاع الصورة */
+object-fit: cover; /* تأكد من أن الصورة تغطي الإطار بشكل جيد */
+}
+
+/* لتقليل شفافية الصورة */
+.navbar img.transparent {
+opacity: 0.7; /* تعديل الشفافية */
+}
+
+
+/* شريط التنقل */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* مسافة بين الأيقونات */
+    font-size: 2rem; /* حجم الأيقونات */
+    color: #fff; /* لون الأيقونات */
+}
+
+.logo-container i , .logo-container a {
+    cursor: pointer; /* لإضافة مؤشر يد */
+}
+
+.logo-container a {
+    text-decoration: none;
+    color: #fff;
+}
+
+nav button {
+    background-color: rgba(192, 187, 183, 0.432);
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 30px;
+    font-size: 30px;
+    cursor: pointer;
+    margin-right: 5px;
+    transition: 0.7s;
+}
+
+nav button:hover {
+    background-color: #978e8e;
+}
+
+button a {
+    text-decoration: none;
+}
+
+/* Dropdown Menu */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: rgb(255 255 255 / 50%);
+    list-style: none;
+    padding: 10px 6px;
+    margin: 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-menu li {
+    padding: 8px 16px;
+}
+
+.dropdown-menu li a {
+    color: #000;
+    text-decoration: none;
+    display: block;
+    border-radius: 10px;
+    padding: 10px;
+    transition: 0.5s;
+}
+
+.dropdown-menu li a:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}

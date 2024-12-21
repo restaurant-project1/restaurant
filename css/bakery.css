@@ -1,0 +1,69 @@
+body{ background-image:url('../imgs/bakery_imgs/background.jpg');
+    background-size: cover;
+    background-repeat:no-repeat ;
+    background-attachment: fixed;
+}
+
+h1{
+    text-align: center;
+    color: rgb(253, 233, 208);
+    background-color: rgb(105, 65, 65);
+}
+
+.menu-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.menu-item {
+    text-align: center;
+    border-radius: 8px;
+    padding: 20px;
+    width: 250px;
+    transition: background-color 0.3s ease, transform 0.3s ease; 
+    cursor: pointer;
+}
+
+.menu-item img {
+    width: 70%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    object-fit: cover;
+}
+
+.menu-item:hover {
+    background-color: #fff; 
+    color: #fcf8f8; 
+    transform: translateY(-10px);
+} 
+
+.menu-item:hover h3 {
+    color: #9adad1;
+}
+
+.menu-item h3 {
+    margin: 10px 0;
+    color: #e5dfec
+}
+
+.menu-item p{
+    color: #c2ccca;
+}
+
+.menu-item img:hover {
+    cursor: url('../imgs/bakery_imgs/hand.png'), auto;
+}
+
+.menu-item :hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(173, 68, 68, 0.3);
+    background-color: rgba(126, 94, 94, 0.746); 
+    cursor: pointer;
+    color: #114c69;
+    font-weight: bolder;
+}

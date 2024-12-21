@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+
+  <link
+    rel="shortcut icon"
+    href=".../imgs/cart_imgs/bag-shopping-solid.svg"
+    type="image/x-icon"
+  />
+    <link rel="stylesheet" href="../css/cart.css"/>
+    <link rel="stylesheet" href="../css/global.css"/>
+    <link rel="stylesheet" href="../css/header.css"/>
+    <link rel="stylesheet" href="../css/nav.css">
+
+</head>
+  <body 
+  style="
+  height: 100vh;
+  display: grid;
+  align-items: center;
+  grid-template-rows: auto 1fr auto;">
+      
+      <nav class="navbar">
+        <div class="logo-container">
+          <a href="../index.html">
+              <i class="fas fa-user-tie"></i>
+              <i class="fas fa-utensils"></i>
+          </a>
+        </div>                
+        <div class="links"><!--ده الجزء الخاص باللينكات اللي في الهيدر-->
+        <button>
+            <a style="position: relative ;color: whitesmoke;"  class="cart " href="en/cart.html">
+            <i class="fa-solid fa-cart-shopping"></i> cart
+            </a>
+        </button>
+
+        <div class="dropdown">
+            <button>
+                <img class="img" width="20px" src="../imgs/home_imgs/4b09b.jpg" alt="Menu" />
+                Menu
+            <ul class="dropdown-menu">
+                <li><a href="sweets.html">Sweets</a></li>
+                <li><a href="drinks.html">Drinks</a></li>
+                <li><a href="meats.html">Meats</a></li>
+                <li><a href="Vegetarian_food.html">Vegetarian Food</a></li>
+                <li><a href="bakery.html">Baked Goods</a></li>
+                <li><a href="fish.html">Fish</a></li>
+            </ul>
+            </button>
+        </div>
+
+        <button>
+            <a class="sign-in" href="login.html" style="color: whitesmoke">
+                <i class="fa-solid fa-right-to-bracket"></i><!--دي واخداها كوبيى عشان الايقونه الموجوده-->
+                Sign in</a>
+            </button>
+            </div>
+    </nav>
+    
+    <main style="text-align: center" class="">
+        <section class="cart">
+          <article class="product flex">
+            <button>
+              <i class="fa-solid fa-trash-can"> </i>
+            </button>
+  
+            <p class="price">$1</p>
+  
+            <div class="flex" style="margin-right: 1rem">
+              <button class="decrease">-</button>
+              <div class="quantity flex">3</div>
+              <button class="increase">+</button>
+            </div>
+  
+            <p class="title">Product Title</p>
+  
+            <img
+              style="border-radius: 0.22rem"
+              width="70"
+              height="70"
+              alt=""
+              src="../imgs/cart_imgs/حلو 1.jpg"
+            />
+          </article>
+  
+          <article class="product flex">
+            <button>
+              <i class="fa-solid fa-trash-can"> </i>
+            </button>
+  
+            <p class="price">$5</p>
+  
+            <div class="flex" style="margin-right: 1rem">
+              <button class="decrease">-</button>
+              <div class="quantity flex">3</div>
+              <button class="increase">+</button>
+            </div>
+  
+            <p class="title">Product Title</p>
+  
+            <img
+              style="border-radius: 0.22rem"
+              width="70"
+              height="70"
+              alt=""
+              src="../imgs/cart_imgs/حلو 1.jpg"
+            />
+          </article>
+  
+          <article class="product flex">
+            <button>
+              <i class="fa-solid fa-trash-can"> </i>
+            </button>
+  
+            <p class="price">$2</p>
+  
+            <div class="flex" style="margin-right: 1rem">
+              <button class="decrease">-</button>
+              <div class="quantity flex">3</div>
+              <button class="increase">+</button>
+            </div>
+  
+            <p class="title">Product Title</p>
+  
+            <img
+              style="border-radius: 0.22rem"
+              width="70"
+              height="70"
+              alt=""
+              src="../imgs/cart_imgs/حلو 1.jpg"
+            />
+          </article>
+        </section>
+  
+        <button class="clear">
+          <i
+            style="color: #fff; margin-right: 0.2rem"
+            class="fa-solid fa-trash-can icon"
+          >
+          </i>
+          Clear Cart
+        </button>
+  
+        <section class="summary">
+          <h1>Cart Summary</h1>
+  
+          <div class="flex">
+            <p class="Subtotal">Subtotal</p>
+            <p>$1999</p>
+          </div>
+          <button disabled class="checkout">CHECKOUT</button>
+          <b><a href="./signin.html"> Please Sign in to continue. </a></b>
+        </section>
+      </main>
+</body>
+</html>
