@@ -1,116 +1,40 @@
 /* إعدادات عامة */
 body, h1, p, ul, li, a, button {
-    margin: 3;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
-    margin-top: 7px;
-  text-decoration:none;
+    text-decoration: none;
 }
-
-body {
-    color: #fff;
-    background-color: #ffffffcf;
-}
-
-.nav {
-    position: fixed; /* يجعل شريط التنقل ثابتًا */
-    top: 0; /* يضعه في أعلى الصفحة */
-    width: 100%; /* يغطي العرض بالكامل */
-    z-index: 1000; /* يضمن بقاءه فوق العناصر الأخرى */
-    background-color: rgba(0, 0,  0.6); /* خلفية نصف شفافة أو غير شفافة */
-    padding: 10px 20px ; /* يضيف مسافات داخل الشريط */
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    font-size: 14px;
-    border: none;
-}
-
-.navbar img {
-  border-radius: 50%; /* يجعل الصورة دائرية */
-  width: 15px; /* يمكنك تعديل الحجم حسب الحاجة */
-  height: 15px; /* نفس الأمر هنا لتحديد ارتفاع الصورة */
-  object-fit: cover; /* تأكد من أن الصورة تغطي الإطار بشكل جيد */
-}
-
-/* لتقليل شفافية الصورة */
-.navbar img.transparent {
-  opacity: 0.7; /* تعديل الشفافية */
-}
-
 
 /* الخلفية */
-.hero {
+.container {
     position: relative;
     height: 100vh;
     overflow: hidden;
-    
 }
 
 .overlay {
-    background-color: rgba(255, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.6); /* طبقة تغطي الفيديو */
     height: 100%;
     width: 100%;
     display: flex;
     flex-direction: column;
-}
-
-/* شريط التنقل */
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 50px;
-}
-
-.logo-container {
-    display: flex;
-    align-items: center;
-    gap: 20px; /* مسافة بين الأيقونات */
-    font-size: 2rem; /* حجم الأيقونات */
-    color: #fff; /* لون الأيقونات */
-}
-
-.logo-container i , .logo-container a {
-    cursor: pointer; /* لإضافة مؤشر يد */
-}
-
-.logo-container a {
-  text-decoration: none;
-  color: #fff;
-}
-
-.nav-links {
-    display: flex;
-    list-style: none;
-}
-
-.nav-links li {
-    margin: 0 15px;
-    position: relative;
-}
-
-.nav-links a {
+    z-index: 1; /* يجعل المحتوى فوق الفيديو */
     color: #fff;
-    text-decoration: none;
-    font-size: 16px;
-    
 }
 
-
+/* الزر */
 button {
-  background-color: rgba(192, 187, 183, 0.432);
-  color: #fff;
-  padding: 5px 5px;
-  border: none; /* حذف الإطار */
-  border-radius: 5px;
-  font-size: 16px;
-  cursor: pointer;
-  margin-right: 5px;
+    background-color: rgba(192, 187, 183, 0.432);
+    color: #fff;
+    padding: 5px;
+    border: none; /* حذف الإطار */
+    border-radius: 5px;
+    font-size: 16px;
 }
 
 /* محتوى الهيرو */
-.hero-content {
+.container-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -124,17 +48,16 @@ button {
     max-width: 50%;
     text-align: center;
     display: flex;
-    flex-direction:column;
-    align-items: center;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 100%;
+    color: #fff;
 }
 
 .text-content h1 {
     font-size: 3rem;
     margin-bottom: 15px;
-    
 }
 
 .text-content p {
@@ -143,101 +66,49 @@ button {
 }
 
 .text-content button {
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-}
-
-.text-content button i {
-    margin-right: 10px;
-}
-
-.text-content button {
-    background-color: rgba(192, 187, 183, 0.432);
-    color: #fff;
     padding: 10px 20px;
-    border-radius: 5px;
-    font-size: 16px;
-}
-/*  Main contents (products)*/
-
-main h1.recommended {
-  margin: 2.3rem 0 2rem 2%;
 }
 
-@media (width < 600px) {
-  main h1.recommended {
-    margin: 2.3rem 0 2rem 0;
-    font-size: 1.4rem;
-  }
+/* محتويات menu (المنتجات) */
+.menu h1.recommended {
+    margin: 2.3rem 0 2rem 2%;
 }
 
-main section.products.flex{
-  flex-wrap: wrap;/* عشان الصور تيجي جنب بعض لو فيه مساحه لو مفيش يكونو تحت بعض*/
-  justify-content: center;
-  gap: 50px;/* عشان يكون فيه مسافه بين العناصر*/
-  display: flex;
-  padding:0;
+@media (max-width: 600px) {
+    .menu h1.recommended {
+        margin: 2.3rem 0 2rem 0;
+        font-size: 1.4rem;
+    }
+}
 
-
-  article.card:hover{
-    scale: 1.01;/* حجمه يكبر لما اقف عليه*/
-  }
-
-
-  .content img {
-    border-radius: 50% ;/* ده الخاص بحواف الصوره*/
-    width: 100px ;
-    height: 100px;
-    object-fit: cover;
-  }
-
-  .card .content {
-    background-color: #fff;
-    border-radius: 0 0 5px 5px;
-
-  }
-
-  .card .content .title {
-    font-size: 16px ;
-    font-weight: bold;
-    margin-top: 10px;
-    color: 333;
-  }
-
-  .card .content .description {/* ده الجزء الخاص بالمحتوى المكتوب تحت الصوره*/
-    padding-inline: 0.4rem;
-    font-size: 0.8rem;
-    margin-top: 0.4rem;
-    margin-bottom: 0.6rem;
-    line-height: 1.1rem;
+.menu section.products.flex {
+    display: flex;
+    flex-wrap: wrap; /* يجعل الصور جنب بعضها في حال وجود مساحة */
+    justify-content: center;
+    gap: 50px; /* يضيف مسافة بين العناصر */
+    margin-bottom: 30px;
     text-align: center;
-    max-width: 150px;
-    word-wrap: break-word;
-  }
+}
 
+.content img {
+    border-radius: 50%; /* يجعل حواف الصورة دائرية */
+    width: 100px;
+    height: 100px;
+    object-fit: cover; /* يجعل الصورة تغطي الأبعاد المحددة بالكامل */
+}
 
-  .fa-solid {
+/* أيقونات */
+.fa-solid {
     color: white;
-  }
-
 }
 
+/* فيديو الخلفية */
 .background-video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* يجعل الفيديو يغطي الخلفية بالكامل */
-  z-index: -1; /* يجعل الفيديو في الخلف */
-}
-
-.overlay {
-  background-color: rgba(0, 0, 0, 0.6); /* طبقة تغطي الفيديو */
-  height: 100%;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  z-index: 1; /* يجعل المحتوى فوق الفيديو */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* يجعل الفيديو يغطي الخلفية بالكامل */
+    z-index: -1; /* يجعل الفيديو في الخلف */
 }

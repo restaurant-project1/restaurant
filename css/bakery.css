@@ -1,69 +1,33 @@
-body{ background-image:url('../imgs/bakery_imgs/background.jpg');
-    background-size: cover;
-    background-repeat:no-repeat ;
-    background-attachment: fixed;
+body::before {
+    content: "";
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+                url('../imgs/bakery_imgs/background.jpg') no-repeat center / cover fixed;
+                position: fixed;
 }
 
-h1{
-    text-align: center;
-    color: rgb(253, 233, 208);
-    background-color: rgb(105, 65, 65);
+.continer {
+    border: 5px solid #000;
 }
 
-.menu-container {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    gap: 10px;
-    padding: 20px;
-    flex-wrap: wrap;
+.items_container {
+    border: 3px solid black;
 }
 
-.menu-item {
-    text-align: center;
-    border-radius: 8px;
-    padding: 20px;
-    width: 250px;
-    transition: background-color 0.3s ease, transform 0.3s ease; 
-    cursor: pointer;
+/*  العناصر */
+.items {
+    color: #fff;
 }
 
-.menu-item img {
-    width: 70%;
-    height: auto;
-    border-radius: 8px;
-    margin-bottom: 10px;
-    object-fit: cover;
+.items:hover {
+    color: #6b2207;
 }
 
-.menu-item:hover {
-    background-color: #fff; 
-    color: #fcf8f8; 
-    transform: translateY(-10px);
-} 
-
-.menu-item:hover h3 {
-    color: #9adad1;
+.add {
+    background-color: rgb(227, 168, 132);
+    color: #000;
 }
 
-.menu-item h3 {
-    margin: 10px 0;
-    color: #e5dfec
-}
-
-.menu-item p{
-    color: #c2ccca;
-}
-
-.menu-item img:hover {
-    cursor: url('../imgs/bakery_imgs/hand.png'), auto;
-}
-
-.menu-item :hover {
-    transform: scale(1.1);
-    box-shadow: 0 10px 20px rgba(173, 68, 68, 0.3);
-    background-color: rgba(126, 94, 94, 0.746); 
-    cursor: pointer;
-    color: #114c69;
-    font-weight: bolder;
+.add:hover {
+    background-color: #79402b;
+    color: #fff;
 }

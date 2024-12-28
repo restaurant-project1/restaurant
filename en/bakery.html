@@ -1,142 +1,152 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/menu.css">
     <link rel="stylesheet" href="../css/bakery.css">
     <link rel="stylesheet" href="../css/nav.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <title>Baked Goods</title>
+    <title>Baked Menu</title>
 </head>
 <body>
+    <div class="continer">
 
-    <nav class="navbar">
-        <div class="logo-container">
-            <a href="../index.html">
-                <i class="fas fa-user-tie"></i>
-                <i class="fas fa-utensils"></i>
-            </a>
-        </div>               
-            <div class="links"><!--ده الجزء الخاص باللينكات اللي في الهيدر-->
-            <button>
-                <a style="position: relative ;color: whitesmoke;"  class="cart " href="en/cart.html">
-                <i class="fa-solid fa-cart-shopping"></i> cart
+        <nav class="navbar">
+
+            <div class="logo-container">
+                <a href="../index.html">
+                    <i class="fas fa-user-tie"></i>
+                    <i class="fas fa-utensils"></i>
                 </a>
-            </button>
-    
-            <div class="dropdown">
-                <button>
-                    <img class="img" width="20px" src="../imgs/home_imgs/4b09b.jpg" alt="Menu" />
-                    Menu
-                <ul class="dropdown-menu">
-                    <li><a href="sweets.html">Sweets</a></li>
-                    <li><a href="drinks.html">Drinks</a></li>
-                    <li><a href="meats.html">Meats</a></li>
-                    <li><a href="Vegetarian_food.html">Vegetarian Food</a></li>
-                    <li><a href="bakery.html">Baked Goods</a></li>
-                    <li><a href="fish.html">Fish</a></li>
-                </ul>
-                </button>
             </div>
-    
-            <button>
-                <a class="sign-in" href="login.html" style="color: whitesmoke">
-                    <i class="fa-solid fa-right-to-bracket"></i><!--دي واخداها كوبيى عشان الايقونه الموجوده-->
-                    Sign in</a>
+            
+            <div class="links"><!--ده الجزء الخاص باللينكات اللي في الهيدر-->
+            
+                <button>
+                    <a class="cart " href="cart.html">
+                        <i class="fa-solid fa-cart-shopping"></i> cart
+                    </a>
                 </button>
+        
+                <button class="dropdown">
+                        <img class="img" width="20px" src="../imgs/home_imgs/4b09b.jpg" alt="Menu" />
+                        Menu
+                    <ul class="dropdown-menu">
+                        <li><a href="sweets.html">Sweets</a></li>
+                        <li><a href="drinks.html">Drinks</a></li>
+                        <li><a href="meats.html">Meats</a></li>
+                        <li><a href="Vegetarian_food.html">Vegetarian Food</a></li>
+                        <li><a href="bakery.html">Baked Goods</a></li>
+                        <li><a href="fish.html">Fish</a></li>
+                    </ul>
+                </button>
+
+                <button>
+                    <a class="sign-in" href="login.html" style="color: whitesmoke">
+                        <i class="fa-solid fa-right-to-bracket"></i><!--دي واخداها كوبيى عشان الايقونه الموجوده-->
+                        Sign in
+                    </a>
+                </button>
+
+            </div>
+        </nav>
+
+        <h1 class="prime_head">Baked Menu</h1>
+        <hr>
+
+        <div class="Second_Head">
+            <h2 class="head" id="top">Baked</h2>
+            <button class="move"><a href="#end" >end</a></button>
+            <div class="items_container">
+                <div class="items">
+                    <img src="../imgs/bakery_imgs/dry.jpg" alt="dsftrrv.jpg">
+                    <p>Dry Cookies</p>
+                    <p>$25</p>
+                    <button class="add">+ Add to cart</button>
                 </div>
-    </nav>
+                
+                <div class="items">
+                    <img src="../imgs/bakery_imgs/rolls.jpg" alt="ddvtgrfew.jpg">
+                    <p>Chocolate Swirl rolls</p>
+                    <p>$30</p>
+                    <button class="add">+ Add to cart</button>
+                </div>
 
-    <h1 class="prime_head">Baked Goods</h1>
-    <div class="menu-container">
+                <div class="items">
+                    <img src="../imgs/bakery_imgs/soft.jpg" alt="oiiijhekw.jpg">
+                    <p>Soft bread rolls</p>
+                    <p>$20</p>
+                    <button class="add">+ Add to cart</button>
+                </div>
 
-        <div class="menu-item">
-                <img src="../imgs/bakery_imgs/dry.jpg" alt="dsftrrv.jpg">
-            <h3>Dry cookies</h3>
-            <p>$30</p>
-            <p>+Add to cart</p>
-        </div>
+                <div class="items">
+                    <img src="../imgs/bakery_imgs/baguette.jpg" alt="weutge.jpg">
+                    <p>Baguette</p>
+                    <p>$35</p>
+                    <button class="add">+ Add to cart</button>
+                </div>
 
-        
-        <div class="menu-item">
-                <img src="../imgs/bakery_imgs/rolls.jpg" alt="ddvtgrfew.jpg">
-            <h3>Chocolate Swirl Rolls</h3>
-            <p>$35</p>
-            <p>+Add to cart</p>
-        </div>
+                <div class="items">
+                    <img src="../imgs/bakery_imgs/borek.jpg" alt="efhkdjjm.jpg">
+                    <p>Bork</p>
+                    <p>$15</p>
+                    <button class="add">+ Add to cart</button>
+                </div>
 
-        <div class="menu-item">
-                <img src="../imgs/bakery_imgs/soft.jpg" alt="oiiijhekw.jpg">
-            <h3>Soft Bread Rolls</h3>
-            <p>$20</p>
-            <p>+Add to cart</p>
-        </div>
+                <div class="items">
+                    <img src="../imgs/bakery_imgs/croissan.jpg" alt="ffrerrf.jpg">
+                    <p>croissan</p>
+                    <p>$40</p>
+                    <button class="add">+ Add to cart</button>
+                </div>
 
-        <div class="menu-item">
-                <img src="../imgs/bakery_imgs/baguette.jpg" alt="weutge.jpg">
-            <h3>Baguette</h3>
-            <p>$40</p>
-            <p>+Add to cart</p>
+                <div class="items">
+                    <img src="../imgs/bakery_imgs/swirl.jpg" alt="kjghhbj.jpg">
+                    <p>swirl rolls</p>
+                    <p>$50</p>
+                    <button class="add">+ Add to cart</button>
+                </div>
 
-        </div>
-        
-        <div class="menu-item">
-                <img src="../imgs/bakery_imgs/borek.jpg" alt="efhkdjjm.jpg">
-            <h3>Borek</h3>
-            <p>$25</p>
-            <p>+Add to cart</p>
-        </div>
+                <div class="items">
+                    <img src="../imgs/bakery_imgs/biscotti.jpg" alt="sdfrtgt.jpg">
+                    <p>biscotti</p>
+                    <p>$40</p>
+                    <button class="add">+ Add to cart</button>
+                </div>
 
-        <div class="menu-item">
-            <img src="../imgs/bakery_imgs/croissan.jpg" alt="ffrerrf.jpg">
-        <h3>Croissan</h3>
-        <p>$15</p>
-        <p>+Add to cart</p>
-        </div>
+                <div class="items">
+                    <img src="../imgs/bakery_imgs/brioche.jpg" alt="fegtrrf.jpg">
+                    <p>brioche</p>
+                    <p>$40</p>
+                    <button class="add">+ Add to cart</button>
+                </div>
 
-        <div class="menu-item">
-            <img src="../imgs/bakery_imgs/swirl.jpg" alt="kjghhbj.jpg">
-        <h3>Swirl Rolls</h3>
-        <p>$30</p>
-        <p>+Add to cart</p>
-        </div>
-        <div class="menu-item">
-            <img src="../imgs/bakery_imgs/biscotti.jpg" alt="sdfrtgt.jpg">
-        <h3>Biscotti</h3>
-        <p>$30</p>
-        <p>+Add to cart</p>
-        </div>
+                <div class="items">
+                    <img src="../imgs/bakery_imgs/makoletchi_pastries.jpg" alt="324rtf32.jpg">
+                    <p>makoletchi pastries</p>
+                    <p>$40</p>
+                    <button class="add">+ Add to cart</button>
+                </div>
 
-        <div class="menu-item">
-            <img src="../imgs/bakery_imgs/brioche.jpg" alt="fegtrrf.jpg">
-        <h3>Brioche</h3>
-        <p>$45</p>
-        <p>+Add to cart</p>
-        </div>
+                <div class="items">
+                    <img src="../imgs/bakery_imgs/cookies.jpg" alt="efdslkkl.jpg">
+                    <p>cookies</p>
+                    <p>$40</p>
+                    <button class="add">+ Add to cart</button>
+                </div>
 
-        <div class="menu-item">
-            <img src="../imgs/bakery_imgs/makoletchi_pastries.jpg" alt="324rtf32.jpg">
-        <h3>Makoletchi Pastries</h3>
-        <p>$45</p>
-        <p>+Add to cart</p>
-        </div>
-
-        <div class="menu-item">
-            <img src="../imgs/bakery_imgs/cookies.jpg" alt="efdslkkl.jpg">
-        <h3>$55</h3>
-        <p>cookies</p>
-        <p>+Add to cart</p>
-        </div>
-
-        <div class="menu-item">
-            <img src="../imgs/bakery_imgs/donuts.jpg" alt="">
-        <h3>Donuts</h3>
-        <p>$60</p>
-        <p>+Add to cart</p>
+                <div class="items" id="end">
+                    <img src="../imgs/bakery_imgs/donuts.jpg" alt="">
+                    <p>Donuts</p>
+                    <p>$40</p>
+                    <button class="add">+ Add to cart</button>
+                </div>
+            </div>
+            <button class="move"><a href="#top" >top</a></button>
         </div>
 
     </div>
-
 </body>
 </html>

@@ -1,73 +1,42 @@
-body {
-    margin: 0;
-    padding: 0;
-    background: url("../imgs/drinks_imgs/background2.jpg") no-repeat center center fixed;
-    background-size: cover;
-    color: #333;
+body::before {
+    content: "";
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+            url('../imgs/drinks_imgs/background2.jpg') no-repeat center / cover fixed;
+    position: fixed;
+
 }
 
-.menu-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 20px;
-    gap: 20px;
+.continer {
+    border: 5px solid #000;
 }
 
-.menu-item {
-    text-align: center;
-    width: 300px;
-    border-radius: 20px;
-    transition: 0.3s;
+.items_container {
+    border: 3px solid black;
 }
 
-.menu-item:hover {
-    transform: scale(1.1);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-    background-color: rgba(255, 255, 255, 0.746);
-    cursor: pointer;
+/*  العناصر */
+.items {
+    color: #fff;
 }
 
-.menu-item img {
-    width: 35%;
-    border-radius: 8px;
-    margin-bottom: 10px;
+.items:hover {
+    color: #6b2207;
 }
 
-.menu-item h3 {
-    font-size: 18px;
-    margin: 10px 0 5px;
+.items img:hover {
+    cursor: url('../imgs/cursor/juice.png'), auto;
 }
 
-.menu-item p {
-    font-size: 14px;
-    color: #666;
-    margin: 0 0 10px;
+.add, .move {
+    background-color: rgb(227, 168, 132);
+    color: #000;
 }
 
-.menu-item span {
-    font-size: 16px;
-    color: red;
-    font-weight: bold;
+.add:hover, .move:hover {
+    background-color: #79402b;
+    color: #fff;
 }
 
-.add , .container a {
-    border-radius: 30px;
-    padding: 5px 20px;
-    cursor: pointer;
-    background-color: #a8673c;
-    color: #ffffff;
+.items img{
+    height: 65%;
 }
-
-.add:hover , .container a:hover{
-    background-color: #fff;
-    color: #9E6845;
-    font-weight: bolder;
-}
-
-.container a {
-    text-decoration: none;
-    border: 3px solid #000;
-    margin: auto 10px;
-}
-

@@ -1,66 +1,34 @@
+body::before {
+    content: "";
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+                url('../imgs/fish_imgs/background.png') no-repeat center / cover fixed;
+                position: fixed;
+}
 
-/* ===============================
-    Main contents (products)
-==================================*/
-main h1.recommended {
-    margin: 2.3rem 0 2rem 2%;
-  }
-  
-  @media (width < 600px) {
-    main h1.recommended {
-      margin: 2.3rem 0 2rem 0;
-      font-size: 1.4rem;
-    }
-  }
-  
-  main section.products.flex{
-    flex-wrap: wrap;/* عشان الصور تيجي جنب بعض لو فيه مساحه لو مفيش يكونو تحت بعض*/
-    justify-content: right;
-    gap: 2rem 1.4rem;/* عشان يكون فيه مسافه بين العناصر*/
+.continer {
+    border: 5px solid #000;
+}
 
-  
-    & img {
-      border-radius: 5px 5px 0 0;/* ده الخاص بحواف الصوره*/
-    }
-  
-    & .card .content {
-      background-color: #fff;
-      border-radius: 0 0 5px 5px;
-    }
-  
-    & .card .content .title {
-      padding-top: 0.7rem;
-      padding-inline: 0.4rem;
-      text-transform: capitalize;
-    }
-  
-    & .card .content .description {/* ده الجزء الخاص بالمحتوى المكتوب تحت الصوره*/
-      padding-inline: 0.4rem;
-      font-size: 0.8rem;
-      margin-top: 0.4rem;
-      margin-bottom: 0.6rem;
-      line-height: 1.1rem;
-    }
-  
-    & .card .content .price {/* دي التنسيقات الخاصه بالسعر*/
-      margin-left: 0.88rem;
-      font-size: 0.9rem;
-      color: rgb(199, 0, 40);
-      font-weight: bold;
-    }
-  
-    & .add-to-cart {
-      margin-right: 0.88rem;
-      background-color: var(--blue-button);
-      color: #fff;
-      border-radius: 4px;
-      padding: 6px 8px;
-      font-size: 0.7rem;
-      gap: 0.33rem;
-    }
-  
-    & .fa-solid {
-      color: white;
-    }
-  
-  }
+.items_container {
+    border: 3px solid black;
+}
+
+/*  العناصر */
+.items {
+    color: #fff;
+}
+
+.items:hover {
+    color: #6b2207;
+}
+
+
+.add {
+    background-color: rgb(227, 168, 132);
+    color: #000;
+}
+
+.add:hover {
+    background-color: #79402b;
+    color: #fff;
+}

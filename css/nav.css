@@ -28,39 +28,21 @@ body , nav button , button a {
     font-family: Roboto_Slab;
 }
 
-.text-content {
+.text-content , p {
     font-family: fredericka;
+}
+
+button , a , .items:hover , .item:hover {
+    cursor: url('../imgs/cursor/pointer.png') , auto;
+}
+
+body {
+    cursor: url('../imgs/cursor/cursor.png'),auto;
 }
 
 
 html {
     scroll-behavior: smooth;
-}
-
-.nav {
-    position: fixed; /* يجعل شريط التنقل ثابتًا */
-    top: 0; /* يضعه في أعلى الصفحة */
-    width: 100%; /* يغطي العرض بالكامل */
-    z-index: 1000; /* يضمن بقاءه فوق العناصر الأخرى */
-    background-color: rgba(0, 0,  0.6); /* خلفية نصف شفافة أو غير شفافة */
-    padding: 10px 20px ; /* يضيف مسافات داخل الشريط */
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    font-size: 14px;
-    border: none;
-}
-
-.navbar img {
-border-radius: 50%; /* يجعل الصورة دائرية */
-width: 30px; /* يمكنك تعديل الحجم حسب الحاجة */
-height: 30px; /* نفس الأمر هنا لتحديد ارتفاع الصورة */
-object-fit: cover; /* تأكد من أن الصورة تغطي الإطار بشكل جيد */
-}
-
-/* لتقليل شفافية الصورة */
-.navbar img.transparent {
-opacity: 0.7; /* تعديل الشفافية */
 }
 
 
@@ -72,6 +54,28 @@ opacity: 0.7; /* تعديل الشفافية */
     padding: 20px 50px;
 }
 
+.navbar img {
+    border-radius: 50%; /* يجعل الصورة دائرية */
+    width: 30px; /* يمكنك تعديل الحجم حسب الحاجة */
+    height: 30px; /* نفس الأمر هنا لتحديد ارتفاع الصورة */
+    object-fit: cover; /* تأكد من أن الصورة تغطي الإطار بشكل جيد */
+}
+
+.navbar button {
+    background-color: rgba(192, 187, 183, 0.7);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+    font-size: 30px;
+    margin-right: 5px;
+    transition: 0.5s;
+}
+
+.navbar button:hover {
+    background-color: #383434;
+}
+
 .logo-container {
     display: flex;
     align-items: center;
@@ -80,33 +84,9 @@ opacity: 0.7; /* تعديل الشفافية */
     color: #fff; /* لون الأيقونات */
 }
 
-.logo-container i , .logo-container a {
-    cursor: pointer; /* لإضافة مؤشر يد */
-}
-
-.logo-container a {
+.logo-container a , .navbar button a  {
     text-decoration: none;
     color: #fff;
-}
-
-nav button {
-    background-color: rgba(192, 187, 183, 0.432);
-    color: #fff;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 30px;
-    font-size: 30px;
-    cursor: pointer;
-    margin-right: 5px;
-    transition: 0.7s;
-}
-
-nav button:hover {
-    background-color: #978e8e;
-}
-
-button a {
-    text-decoration: none;
 }
 
 /* Dropdown Menu */
@@ -119,13 +99,12 @@ button a {
     display: none;
     position: absolute;
     top: 100%;
-    left: 0;
-    background-color: rgb(255 255 255 / 50%);
+    left: -30px;
+    background-color: rgb(255 255 255 / 90%);
     list-style: none;
     padding: 10px 6px;
     margin: 0;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
 }
 
 .dropdown-menu li {
