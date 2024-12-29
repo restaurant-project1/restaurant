@@ -112,3 +112,14 @@ button {
     object-fit: cover; /* يجعل الفيديو يغطي الخلفية بالكامل */
     z-index: -1; /* يجعل الفيديو في الخلف */
 }
+
+footer {
+    background-color: rgb(0, 0, 0);
+    color:#fff;
+    text-align: center;
+    padding: 20px;
+}
+
+footer span {
+    color: rgb(214, 128, 94);
+}
