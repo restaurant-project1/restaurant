@@ -19,6 +19,10 @@ body::before {
     color: #fff;
 }
 
+.items img {
+    height: 40%;
+}
+
 .items:hover {
     color: #6b2207;
 }
@@ -35,8 +39,4 @@ body::before {
 .add:hover, .move:hover {
     background-color: #79402b;
     color: #fff;
-}
-
-.items img{
-    height: 65%;
 }

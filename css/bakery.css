@@ -22,6 +22,10 @@ body::before {
     color: #6b2207;
 }
 
+.items img:hover {
+    cursor: url('../imgs/cursor/hand.png') , auto;
+}
+
 .add {
     background-color: rgb(227, 168, 132);
     color: #000;

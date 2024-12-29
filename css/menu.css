@@ -60,7 +60,7 @@ h1, h2 {
 .items img {
     width: 100%;
     height: 200px;
-    border-radius: 10px;
+    border-radius: 50%;
 }
 
 .items:hover {
@@ -68,10 +68,6 @@ h1, h2 {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
     background-color: rgba(255, 255, 255, 0.746); /* تعديل الشفافية هنا (0.5 يعني 50%) */
     font-weight: bolder;
-}
-
-.items img:hover {
-    cursor: url('../imgs/cursor/spoon.png'), auto;
 }
 
 .move a {
