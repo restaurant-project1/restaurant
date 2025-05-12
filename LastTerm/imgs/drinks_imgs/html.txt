@@ -1,0 +1,165 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Page</title>
+    <link rel="stylesheet" href="المشروع.css">
+</head>
+ <center><h1 id="c1" style="background-color: white;">Hot Drinks</h1></center>
+ <a href="#c6" style="background-color: white;">cold drinks</a>
+<body>
+    <div class="menu-container">
+        <div class="menu-item">
+            <img src="ice coffe.jpg" alt="ice coffe" width="50%" height="50%">
+            <h3>ice coffe</h3>
+            <span>$14.95</span><br>
+            <button class="add">add to cart</button>
+        </div>
+        <div class="menu-item">
+            <img src="tea.jpg" alt="tea" width="50%" height="50%">
+            <h3>tea</h3>
+            <span>$5.00</span><br>
+            <button class="add">add to cart</button>
+        </div>
+        <div class="menu-item">
+            <img src="mokaa.jpg" alt="mokaa" width="50%" height="50%">
+            <h3>mokaa</h3>
+            <span>$8.95</span><br>
+            <button class="add">add to cart</button>
+        </div>
+        <div class="menu-item">
+            <img src="capitchino.jpg" alt="capitchino" width="50%" height="50%">
+            <h3>capitchino</h3>
+            <span>$12.95</span><br>
+            <button class="add">add to cart</button>
+        </div>
+        <div class="menu-item">
+            <img src="coffee.jpg" alt="coffee" width="50%" height="50%">
+            <h3>coffee</h3>
+            <span>$10.5</span><br>
+            <button class="add">add to cart</button>
+        </div>
+        <div class="menu-item">
+            <img src="latte.jpg" alt="latte" width="50%" height="50%">
+            <h3>latte</h3>
+            <span>$9.95</span><br>
+            <button class="add">add to cart</button>
+        </div>
+        <div class="menu-item">
+            <img src="Hot choclet.jpg" alt="Hot choclet" width="50%" height="50%">
+            <h3>Hot choclet</h3>
+            <span>$15.95</span><br>
+            <button class="add">add to cart</button>
+        </div>
+        <div class="menu-item">
+            <img src="ginger.jpg" alt="ginger" width="50%" height="50%">
+            <h3>ginger</h3>
+            <span>$7.5</span><br>
+            <button class="add">add to cart</button>
+        </div>
+        <div class="menu-item">
+            <img src="orchid (2).jpg" alt="orchid (2)" width="50%" height="50%">
+            <h3>orchid</h3>
+            <span>$6.95</span><br>
+            <button class="add">add to cart</button>
+        </div>
+        <div class="menu-item">
+            <img src="flat white.jpg" alt="flat white" width="50%" height="50%">
+            <h3>flat white</h3>
+            <span>$5.95</span><br>
+            <button class="add">add to cart</button>
+        </div>
+        <div class="menu-item">
+            <img src="chilata capitchino.jpg" alt="chilata capitchino" width="50%" height="50%">
+            <h3>chilata capitchino</h3>
+            <span>$8.95</span><br>
+            <button class="add">add to cart</button>
+        </div>
+        <div class="menu-item">
+            <img src="Hibiscus.jpg" alt="Hibiscus" width="50%" height="50%">
+            <h3>Hibiscus</h3>
+            <span>$12.95</span><br>
+            <button class="add">add to cart</button>
+        </div>
+    </div>
+    
+ <center><h1 id="c6" style="background-color: white;">Cold Drinks</h1></center>
+ <a href="#c1" style="background-color: white;">Hot drinks</a>
+    <div class="menu-container">
+        <div class="menu-item">
+            <img src="mango.jpg" alt="mango" width="50%" height="50%">
+            <h3>mango</h3>
+            <span>$14.95</span><br>
+            <button class="add">add to cart</button>
+        </div>
+        <div class="menu-item">
+            <img src="strawberry.jpg" alt="strawberry" width="50%" height="50%">
+            <h3>strawberry</h3>
+            <span>$5.00</span><br>
+            <button class="add">add to cart</button>
+        </div>
+        <div class="menu-item">
+            <img src="big coola.jpg" alt="big coola" width="50%" height="50%">
+            <h3>big coola</h3>
+            <span>$8.95</span><br>
+            <button class="add">add to cart</button>
+        </div>
+        <div class="menu-item">
+            <img src="ice latai.jpg" alt="ice latai" width="50%" height="50%">
+            <h3>ice latai</h3>
+            <span>$12.95</span><br>
+            <button class="add">add to cart</button>
+        </div>
+        <div class="menu-item">
+            <img src="koctail.jpg" alt="koctail" width="50%" height="50%">
+            <h3>koctail</h3>
+            <span>$19.95</span><br>
+            <button class="add">add to cart</button> 
+        </div>
+        <div class="menu-item">
+            <img src="milk chich.jpg" alt="milk chich" width="50%" height="50%">
+            <h3>milk chich</h3>
+            <span>$9.95</span><br>
+            <button class="add">add to cart</button>
+        </div>
+        <div class="menu-item">
+            <img src="orange.jpg" alt="orange" width="50%" height="50%">
+            <h3>orange</h3>
+            <span>$5.95</span><br>
+            <button class="add">add to cart</button>
+        </div>
+        <div class="menu-item">
+            <img src="micatoo.jpg" alt="micatoo" width="50%" height="50%">
+            <h3>micatoo</h3>
+            <span>$15.95</span><br>
+            <button class="add">add to cart</button>
+        </div>
+        <div class="menu-item">
+            <img src="ice tea peach.jpg" alt="ice tea peach" width="50%" height="50%">
+            <h3>ice tea peach</h3>
+            <span>$20</span><br>
+            <button class="add">add to cart</button>
+        </div>
+        <div class="menu-item">
+            <img src="Apple juice.jpg" alt="Apple juice" width="50%" height="50%">
+            <h3>Apple juice</h3>
+            <span>$8.95</span><br>
+            <button class="add">add to cart</button>
+        </div>
+        <div class="menu-item">
+            <img src="watermelon smoothie.jpg" alt="watermelon smoothie" width="50%" height="50%">
+            <h3>watermelon smoothie</h3>
+            <span>$13.95</span><br>
+            <button class="add">add to cart</button>
+        </div>
+        <div class="menu-item">
+            <img src="pineapple smoothie.jpg" alt="pineapple smoothie" width="50%" height="50%">
+            <h3>pineapple smoothie</h3>
+            <span>$14</span><br>
+            <button class="add">add to cart</button>
+        </div>
+    </div>
+</body>
+</html>

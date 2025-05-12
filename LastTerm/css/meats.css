@@ -1,0 +1,37 @@
+body::before {
+    content: "";
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+                url('../imgs/meats_imgs/background.png') no-repeat center / cover fixed;
+                position: fixed;
+}
+
+.continer {
+    border: 5px solid #000;
+}
+
+.items_container {
+    border: 3px solid black;
+}
+
+/*  العناصر */
+.items {
+    color: #fff;
+}
+
+.items:hover {
+    color: #6b2207;
+}
+
+.items img:hover {
+    cursor: url('../imgs/cursor/fork.png') , auto;
+}
+
+.add {
+    background-color: rgb(227, 168, 132);
+    color: #000;
+}
+
+.add:hover {
+    background-color: #79402b;
+    color: #fff;
+}

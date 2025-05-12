@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+
+<body>
+    <div class="container">
+        <video autoplay muted loop class="background-video">
+            <source src="imgs/home_imgs/background.mp4" type="video/mp4">
+            Your browser does not support video playback.
+        </video>
+
+        <div class="overlay">
+            <nav class="navbar">
+
+            <div class="logo-container">
+                <a href="index.html">
+                    <i class="fas fa-user-tie"></i>
+                    <i class="fas fa-utensils"></i>
+                </a>
+            </div>
+            
+            <div class="links"><!--ده الجزء الخاص باللينكات اللي في الهيدر-->
+            
+                <button>
+                    <a class="cart " href="en/cart.html">
+                        <i class="fa-solid fa-cart-shopping"></i> cart
+                    </a>
+                </button>
+
+                <button class="dropdown">
+                        <img class="img" width="20px" src="imgs/home_imgs/4b09b.jpg" alt="Menu" />
+                        Menu
+                    <ul class="dropdown-menu">
+                        <li><a href="en/sweets.html">Sweets</a></li>
+                        <li><a href="en/drinks.html">Drinks</a></li>
+                        <li><a href="en/meats.html">Meats</a></li>
+                        <li><a href="en/Vegetarian_food.html">Vegetarian Food</a></li>
+                        <li><a href="en/bakery.html">Baked Goods</a></li>
+                        <li><a href="en/fish.html">Sea Food</li>
+                    </ul>
+                </button>
+
+                <button>
+                    <a class="sign-in" href="en/login.html" style="color: whitesmoke">
+                        <i class="fa-solid fa-right-to-bracket"></i><!--دي واخداها كوبيى عشان الايقونه الموجوده-->
+                        Sign in
+                    </a>
+                </button>
+
+            </div>
+        </nav>
+
+            <div class="container-content">
+                <div class="text-content">
+                    <h1>Welcome to <br>Flavor Corner</h1>
+                    <p>Enjoy a unique dining experience with delicious dishes and excellent service in a warm atmosphere. We look forward to hosting you!</p>
+                    <button class="book-now">
+                        <i class="fas fa-utensils"></i> Book Now
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="overlay menu">
+        <h1 class="recommended">
+            <i class="fa-solid fa-check"></i> Recommended for you
+        </h1>
+
+        <section class="products flex">
+            <div class="content">
+                <a href="en/sweets.html">
+                    <img src="imgs/home_imgs/حلو 2.jpg" alt="Sweets" />
+                </a>
+                <h1 class="title">Sweets</h1>
+            </div>
+
+            <div class="content">
+                <a href="en/meats.html">
+                    <img src="imgs/home_imgs/WhatsApp Image 2024-12-20 at 14.12.24_af46429f.jpg" alt="Meats" />
+                </a>
+                <h1 class="title">Meats</h1>
+            </div>
+
+            <div class="content">
+                <a href="en/drinks.html">
+                    <img src="imgs/home_imgs/eb.jpg" alt="Beverages" />
+                </a>
+                <h1 class="title">Drinks</h1>
+            </div>
+
+            <div class="content">
+                <a href="en/bakery.html">
+                    <img src="imgs/home_imgs/ed54.jpg" alt="Baked Goods" />
+                </a>
+                <h1 class="title">Baked Goods</h1>
+            </div>
+
+            <div class="content">
+                <a href="en/Vegetarian_food.html">
+                    <img src="imgs/home_imgs/WhatsApp Image 2024-12-20 at 14.12.26_0b69d91e.jpg" alt="Vegetarian Food" />
+                </a>
+                <h1 class="title">Vegetarian Food</h1>
+            </div>
+
+            <div class="content">
+                <a href="en/fish.html">
+                    <img src="imgs/home_imgs/سمك 4.jpg" alt="Seafood" />
+                </a>
+                <h1 class="title">Sea Food</h1>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        Designed and developed by <span>DEV TEAM</span> © 2024.
+    </footer>
+</body>
+</html>
